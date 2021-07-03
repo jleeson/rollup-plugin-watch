@@ -1,0 +1,43 @@
+{
+  "name": "rollup-plugin-watch",
+  "version": "0.1.0",
+  "description": "A rollup plugin to specify directories and files to watch",
+  "main": "dist/plugin.cjs.js",
+  "module": "dist/plugin.esm.js",
+  "types": "types/plugin.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint src",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jleeson/rollup-plugin-watch.git"
+  },
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "watch",
+    "directories",
+    "files",
+    "assets"
+  ],
+  "author": "Jacob Leeson <jleeson2000@gmail.com> (https://twitter.com/jleesons)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jleeson/rollup-plugin-watch/issues"
+  },
+  "homepage": "https://github.com/jleeson/rollup-plugin-watch#readme",
+  "devDependencies": {
+    "esbuild": "^0.12.14",
+    "eslint": "^7.30.0",
+    "rollup": "^2.52.7",
+    "rollup-plugin-esbuild": "^4.5.0"
+  },
+  "peerDependencies": {
+    "rollup": "^2.x.x"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^4.1.0"
+  }
+}

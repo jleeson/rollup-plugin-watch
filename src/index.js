@@ -23,7 +23,6 @@ export default (options = {}) => {
                     if (stats.isFile()) {
                         this.addWatchFile(fullPath);
                     } else if (stats.isDirectory()) {
-                        this.addWatchFile(fullPath);
                         watch(fullPath);
                     }
                 }

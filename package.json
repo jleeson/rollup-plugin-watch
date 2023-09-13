@@ -5,14 +5,13 @@
   "main": "dist/plugin.cjs.js",
   "module": "dist/plugin.esm.js",
   "types": "types/plugin.d.ts",
+  "engines": {
+    "node": ">=16"
+  },
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint src",
     "prepublishOnly": "npm run lint && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jleeson/rollup-plugin-watch.git"
   },
   "keywords": [
     "rollup",
@@ -22,6 +21,21 @@
     "files",
     "assets"
   ],
+  "files": [
+    "dist",
+    "types"
+  ],
+  "exports": {
+    ".": {
+      "types": "./types/plugin.d.ts",
+      "require": "./dist/plugin.js",
+      "import": "./dist/plugin.mjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jleeson/rollup-plugin-watch.git"
+  },
   "author": "Jacob Leeson <jleeson2000@gmail.com> (https://twitter.com/jleesons)",
   "license": "MIT",
   "bugs": {
@@ -29,15 +43,15 @@
   },
   "homepage": "https://github.com/jleeson/rollup-plugin-watch#readme",
   "devDependencies": {
-    "esbuild": "^0.15.12",
-    "eslint": "^8.26.0",
-    "rollup": "^2.79.1",
-    "rollup-plugin-esbuild": "^4.10.1"
+    "esbuild": "^0.19.2",
+    "eslint": "^8.49.0",
+    "rollup": "^3.29.1",
+    "rollup-plugin-esbuild": "^5.0.0"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^5.0.4"
   },
   "peerDependencies": {
     "rollup": "^2.x.x || ^3.x.x"
-  },
-  "dependencies": {
-    "@rollup/pluginutils": "^5.0.2"
   }
 }

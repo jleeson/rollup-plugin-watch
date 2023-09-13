@@ -3,7 +3,7 @@ A rollup plugin to specify directories and files to watch
 
 ![Actions](https://github.com/jleeson/rollup-plugin-watch/workflows/build/badge.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jleeson/rollup-plugin-watch/blob/master/LICENSE)
-[![Donate](https://img.shields.io/badge/patreon-donate-green.svg)](https://www.patreon.com/outwalkstudios)
+[![Follow Us](https://img.shields.io/badge/follow-on%20twitter-4AA1EC.svg)](https://twitter.com/jleesons)
 
 ---
 

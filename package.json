@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-watch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A rollup plugin to specify directories and files to watch",
   "main": "dist/plugin.cjs.js",
   "module": "dist/plugin.esm.js",
@@ -52,6 +52,6 @@
     "@rollup/pluginutils": "^5.0.4"
   },
   "peerDependencies": {
-    "rollup": "^2.x.x || ^3.x.x"
+    "rollup": "^2.x.x || ^3.x.x || ^4.x.x"
   }
 }

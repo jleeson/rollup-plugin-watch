@@ -1,6 +1,7 @@
 import { createFilter } from "@rollup/pluginutils";
 import fs from "fs";
 import path from "path";
+import { cwd } from 'process';
 
 export default (options = {}) => {
 
@@ -15,7 +16,7 @@ export default (options = {}) => {
                 const filesToWatch = fs.readdirSync(src);
 
                 for (let file of filesToWatch) {
-                    const fullPath = path.join(src, file);
+                    const fullPath = path.join(cwd(), src, file);
                     const stats = fs.statSync(fullPath);
 
                     if (!filter(fullPath)) continue;
